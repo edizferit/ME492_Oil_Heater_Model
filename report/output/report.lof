@@ -1,0 +1,39 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces ORC Setup in BURET Lab}}{1}{figure.caption.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The Oil Cycle}}{2}{figure.caption.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces The oscillation of oil's temperature when set temperature is $80^\circ C$}}{2}{figure.caption.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Oil's volumetric flow rate during the experiment.\relax }}{8}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Heater Simulink model.\relax }}{9}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Lookup tables Simulink model.\relax }}{10}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Power control Simulink model.\relax }}{10}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Matlab user interface.\relax }}{11}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Resistor schematic.\relax }}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Resistor Simulink model.\relax }}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Temperature variations with control strategy.\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy flow through the system.\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Evaporator heat transfer curve fitting to experimental data.\relax }}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Experimental oil temperature data at evaporator inlet.\relax }}{14}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Test-1.\relax }}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Test-2.\relax }}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Oil cycle with suggested method.\relax }}{16}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Evaporator model before and after the proposed solution is implemented.\relax }}{16}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Concept Setup of the Proposed Solution}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A Gear Pump}}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A Disc Check Valve}}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 3-way ball valve}}{19}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Actuator - Siemens GLB161.9E}}{19}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Circuit Diagram of the Experiment Setup}}{20}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Actuator motor control.\relax }}{21}{figure.caption.27}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Test-3.\relax }}{22}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Test-4.\relax }}{22}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Test-5.\relax }}{23}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Test-6.\relax }}{23}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Test-7.\relax }}{23}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison of temperature oscillation results with the solution.\relax }}{23}{figure.caption.31}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

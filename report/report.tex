@@ -1,0 +1,74 @@
+\documentclass[a4paper]{report} % paper size and format
+
+\usepackage{titling} % to use \thetitle, \theauthor, etc.
+\title{Oil Temperature Control Unit}
+\author{Ediz Ferit Kula \and Serdal Şen}
+\date{January 2023}
+
+\input{preamble.tex}
+
+\begin{document}
+
+    \pagenumbering{roman}
+
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1cm}
+
+    
+            \LARGE
+            \thetitle
+            
+            \Large
+            \vspace{0.5cm}
+            
+            by
+            
+            \vspace{0.5cm}
+            \theauthor
+            
+            \vfill
+            
+            \vspace{0.8cm}
+            \includegraphics[width=0.4\textwidth]{images/logo.png}
+            
+            \Large
+            Department of Mechanical Engineering\\
+            Bogazici University\\
+            Turkey\\
+            \thedate
+            \vspace*{1cm}
+        \end{center}
+    \end{titlepage}
+
+    \begin{abstract}
+         This report aims to introduce a dynamic model with Matlab/Simulink that simulates the oil cycle part of an ORC setup and proposes a solution for the oil's oscillating temperature. The heater of this cycle regularly overshoots and undershoots the set temperature of the oil, and this results in an oscillation of the temperature of the primary working fluid, which is not desired. A dynamic model is created by applying thermodynamic and heat transfer principles to the components of the oil cycle. The unknown variables are either calculated by the experimental data or found by using the experimental data as training data to the model. Afterward, the model is, compared with the experimental data to demonstrate that the model is valid; as it turned out, the model data and experimental data are coherent. Next, a proposed solution is created including a bypass pipeline between the inlet and exit and producing a reverse flow. The simulation of the proposed solution is done with the validated model. The simulation demonstrated that the oscillations could be reduced with the bypass pipeline based on how much of the flow goes through the bypass pipeline. Furthermore, a concept experimental setup is created by using a pump, a check valve, a 3-way valve, and an actuator. The real experiment, however, only consisted of a 3-way valve and an actuator, demonstrating that the 3-way valve can be controlled with the actuator to change the fluid flow direction.
+    \end{abstract}
+   
+
+    \tableofcontents
+    \setcounter{page}{3}
+    \clearpage
+    \listoffigures
+    \clearpage
+    \listoftables
+    \clearpage
+
+    \pagenumbering{arabic}
+
+    \include{1-introduction.tex}
+    \include{2-theory.tex}
+    \include{3-methodology.tex}
+    \include{4-experimental-setup.tex}
+    \include{5-results.tex}
+    \include{6-conclusion.tex}
+
+    
+    \renewcommand\bibname{References} % Change Bibliography to References
+    \bibliographystyle{unsrt}
+    \bibliography{references.bib}
+
+    \appendix
+    \input{appendix.tex}
+
+\end{document}

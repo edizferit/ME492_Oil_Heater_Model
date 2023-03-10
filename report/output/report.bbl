@@ -1,0 +1,66 @@
+\begin{thebibliography}{10}
+
+\bibitem{marchi}
+Matteo Marchionni, Giuseppe Bianchi, Apostolos Karvountzis-Kontakiotis,
+  Apostolos Pesiridis, and Savvas~A Tassou.
+\newblock Dynamic modeling and optimization of an orc unit equipped with plate
+  heat exchangers and turbomachines.
+\newblock {\em Energy Procedia}, 129:224--231, 2017.
+
+\bibitem{wei}
+Donghong Wei, Xuesheng Lu, Zhen Lu, and Jianming Gu.
+\newblock Dynamic modeling and simulation of an organic rankine cycle (orc)
+  system for waste heat recovery.
+\newblock {\em Applied Thermal Engineering}, 28(10):1216--1224, 2008.
+
+\bibitem{zhang}
+Ying Zhang, Shuai Deng, Li~Zhao, Shan Lin, Mengjie Bai, Wei Wang, and Dongpeng
+  Zhao.
+\newblock Dynamic test and verification of model-guided orc system.
+\newblock {\em Energy Conversion and Management}, 186:349--367, 2019.
+
+\bibitem{quoilin}
+Sylvain Quoilin, Adriano Desideri, Jorrit Wronski, Ian Bell, and Vincent
+  Lemort.
+\newblock Thermocycle: A modelica library for the simulation of thermodynamic
+  systems.
+\newblock In {\em 10th international Modelica conference}, 2014.
+
+\bibitem{altun}
+Ertuğrul Altun.
+\newblock {\em Dynamic Modeling of Organic Rankine Cycle and Its Experimental
+  Verification}.
+\newblock PhD thesis, 2018.
+
+\bibitem{carr}
+Gianluca Carraro, Sergio Rech, Andrea Lazzaretto, Giuseppe Toniato, and Piero
+  Danieli.
+\newblock Dynamic simulation and experiments of a low-cost small orc unit for
+  market applications.
+\newblock {\em Energy Conversion and Management}, 197:111863, 2019.
+
+\bibitem{inproceedings}
+Muhammad Akmal and Brendan Fox.
+\newblock {\em Modelling and Simulation of Underfloor Heating System Supplied
+  From Heat Pump}.
+\newblock 04 2016.
+
+\bibitem{moran}
+MICHAEL~J. MORAN.
+\newblock {\em Fundamentals of Engineering Thermodynamics}.
+\newblock WILEY, 2020.
+
+\bibitem{gasomi}
+Wilfrido Rivera, Karen Sánchez-Sánchez, J.~Alejandro Hernández-Magallanes,
+  J.~Camilo Jiménez-García, and Alejandro Pacheco.
+\newblock Modeling of novel thermodynamic cycles to produce power and cooling
+  simultaneously.
+\newblock {\em Processes}, 8(3), 2020.
+
+\bibitem{incropera}
+Frank~P. Incropera and David~P. DeWitt.
+\newblock {\em Fundamentals of Heat and Mass Transfer}.
+\newblock John Wiley \& Sons, Inc., New York City, New York, 4th edition
+  edition, 1996.
+
+\end{thebibliography}
