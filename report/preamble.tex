@@ -1,0 +1,54 @@
+% load packages:
+\usepackage[margin=1in]{geometry}   % edit page margins
+\usepackage{indentfirst}            % indent after section title
+\setlength\parindent{24pt}
+\usepackage{setspace}               % line spacing
+\setstretch{1.25}
+\usepackage{wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages} % Include pdf pages as figures
+\usepackage{tocloft} % Dot fill for TOC
+\usepackage{siunitx} % Better units and numbers. Using v2 in this document
+\usepackage[americaninductors]{circuitikz} % For drawing the schematic
+\usepackage{amsmath} % Better math presentation
+\usepackage{physics} % Better math presentation
+\usepackage{graphicx} % Insert images
+\usepackage[section]{placeins} % Force figures to appear in the section in which they are declared.
+\usepackage[inkscapepath=output/.svg]{svg} % Insert svg images
+\usepackage{caption} % Better caption and linking behaviour.
+\usepackage{transparent}
+\usepackage{subcaption} % For subfigures
+\usepackage{float} % For H float setting
+
+%% MATLAB ==============================
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage{matlab}
+\sloppy
+\epstopdfsetup{outdir=./}
+\graphicspath{ {./matlab_images/} }
+%% =====================================
+
+% --------------------------------------------------------------------
+% Renew commands
+% --------------------------------------------------------------------
+\setlength{\parskip}{10pt} % Increasing the space between paragraphs
+
+% --------------------------------------------------------------------
+% New Commands and Definitions
+% --------------------------------------------------------------------
+
+% Force figures to appear in the subsection in which they are declared:
+
+\makeatletter
+\AtBeginDocument{%
+    \expandafter\renewcommand\expandafter\subsection\expandafter{%
+        \expandafter\@fb@secFB\subsection
+    }%
+}
+\makeatother
+
+

@@ -1,0 +1,97 @@
+\chapter{Theory}
+
+In order to provide a transient simulation model of this oil cycle, some governing equations must be established for each component in the cycle. Additionally, in order to appropriately simulate the cooling of the system when the heater is closed, the oil in the pipes must also be included in the model. Each component in the cycle (pump, tank, heater, and evaporator) can be considered as control volume, and this will allow us to write transient energy and mass balance equations inside the components. First, let's start with the mass balance equations\cite{moran}:
+
+	\begin{equation}
+		\label{mass_balance}
+		\frac{d m_cv}{dt} = \dot{m}_i - \dot{m}_e 
+	\end{equation}
+	\noindent
+	where $\dot{m}$ is the overall mass change rate inside the control volume, and $\dot{m}_i$, and $\dot{m}_e$ represent the mass transfers at the inlet and exit of the control volume, respectively.
+	
+	By using Equation \ref{massvol}, the mass balance equation can be modified as volumetric flow rate balance. This formulation is more useful than the mass balance equation because the volumetric flow rate is constant across the cycle.
+ 
+	\begin{equation}
+		\label{massvol}
+		\dot{m} = \dot{V} \rho
+	\end{equation}
+	\begin{equation}
+		\label{massvol2}
+		\frac{d (V_{cv} \rho)}{dt}= \dot{V}_i \dot{\rho}_i - \dot{V}_e \dot{\rho}_e
+	\end{equation}
+	\noindent
+	where $\dot{V}$ is the volumetric flow rate, and $\dot{\rho}$ is the density.
+	
+	Furthermore, the transient energy balance equation can be written in the control volumes (See Equation \ref{energy}).
+ 
+	\begin{equation}
+		\label{energy}
+		\frac{d E_{cv}}{dt}= \dot{Q} -  \dot{W}_{cv} +\dot{m}_i(h_i + \frac{v_i^2}{2} + gz_i) - \dot{m}_e(h_e + \frac{v_e^2}{2} + gz_e)
+	\end{equation}
+
+	\noindent
+	where $ E_{cv}$ is the energy inside the control volume, and with the derivative, the left side of the equation corresponds to the energy change in the control volume. The $\dot{Q}$ is the heat transferred to the control volume, $\dot{W}_{cv}$ is the work done by the control volume, $\dot{m}$ is the mass flow rate, the $h$ is the enthalpy, $v$ is the velocity of the fluid, $gz$ is the product of the gravitational acceleration and the relative height, and the subscripts $i$ and $e$ indicate the fluid at the inlet and exit, respectively. Together $\dot{m}(h+ \frac{v^2}{2} + gz)$ means energy that enters or exits the control volume with the fluid flow at the inlet or exit. The kinetic and potential effects in this equation are negligibly small, so the equation can be reduced to Equation \ref{energy2}.
+ 
+	\begin{equation}
+		\label{energy2}
+		\frac{d E_{cv}}{dt}= \dot{Q} -  \dot{W}_{cv} +\dot{m}_i h_i - \dot{m}_e h_e
+	\end{equation}
+	
+	Another important governing equation is the heat transfer equation, as can be seen in Equation \ref{heattransfer}. This equation can be used to calculate the temperature change when heat is stored inside the material. That is why $E_{st}$ indicating energy stored in the material is used instead of $Q$.
+ 
+	\begin{equation}
+		\label{heattransfer}
+		E_{st}= m c (T_2 - T_1)
+	\end{equation}
+	\noindent
+	where $m$ is the mass of the material, $c$ is the specific heat of the material, and $T_1$ and $T_2$ are the initial and final temperatures of the material, respectively. This equation can be used to calculate the temperature change of a material by knowing the energy stored in the material. However, this equation is not transient. That is why this equation must be differentiated with respect to time. Note that $T_2$ transformed to $T$ because the final temperature is unknown and desired to be calculated.
+ 
+	\begin{equation}
+		\label{heattransfer2}
+		\dot{E_{st}}= \frac{d[m c (T_2 - T_1)]}{dt}
+	\end{equation}
+	\begin{equation}
+		\label{heattransfer3}
+		\dot{E_{st}}= \dot{m} c (T - T_1) + m c \frac{dT}{dt}
+	\end{equation}
+
+	The heat transfer equation and energy balance equations are related in a way. The energy balance inside a control volume determines the energy change in the control volume, which is, in our case, stored inside the oil. This relation can be shown by Equation \ref{ultimate}. Afterward, the equation can be transformed to:
+ 
+	\begin{equation}
+		\label{ultimate}
+		\dot{E_{st}}= \dot{E_{cv}}
+	\end{equation}
+	\begin{equation}
+		\label{ultimate2}
+		\dot{m} c (T - T_1) + m c \frac{dT}{dt} = \dot{Q} -  \dot{W}_{cv} +\dot{m}_i h_i - \dot{m}_e h_e
+	\end{equation}
+	\noindent
+	Here the mass flow rate is assumed as constant for the sake of simplicity. By using Equation \ref{mass_balance}, we can rewrite the $\dot{m}$ and solve for $\frac{dT}{dt}$.
+ 
+	\begin{equation}
+		\label{ultimate3}
+		m c \frac{dT}{dt} = \dot{Q} -  \dot{W}_{cv} + \dot{m} (h_i - h_e) - \dot{m} c (T - T_1)
+	\end{equation}
+
+	To further improve the question, we need to introduce a specific heat-enthalpy relationship into consideration. The specific heat changes with temperature, but we can assume it is a constant since the specific heat does not change much within our temperature range. Therefore, the specific heat-enthalpy relation can be written as:
+ 
+	\begin{equation}
+		\label{specific}
+		c_p (T_2 -T_1) = h_2 - h_1
+	\end{equation}
+	\noindent
+	Implementing above equation into Equation \ref{ultimate3} results in:
+ 
+	\begin{equation}
+		\label{ultimate4}
+		m c \frac{dT}{dt} = \dot{Q} -  \dot{W}_{cv} + \dot{m} c (T_1 - T) - \dot{m} c (T - T_1)
+	\end{equation}
+	\noindent
+	The above equation can be simplified further. Note that there is no work done in any of the oil cycle's components except in the pump, which is neglected because it does a negligible effect on the oil's temperature.
+ 
+	\begin{equation}
+		\label{ultimate5}
+		\frac{dT}{dt} = \frac{\dot{Q}}{mc}+ 2\frac{\dot{m}}{m}(T_1 - T) 
+	\end{equation}
+	
+	Overall, the mass balance equation, control volume energy balance equation, and stored energy equations can be used as governing equations to create a model that can determine temperature change based on initial conditions.
