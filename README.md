@@ -22,7 +22,7 @@ Curve fitting techniques are applied to the experimental data to obtain several 
 
 The experimental data is split to two parts as training and validation as seen below:
 <p align="center">
-  <img src="https://github.com/edizferit/Oil_Heater_Simulation/blob/main/figures/experimental-data.png?raw=true" width="100%">
+  <img src="https://github.com/edizferit/Oil_Heater_Simulation/blob/main/figures/experimental-data.png?raw=true" width="50%">
 </p>
 
 
