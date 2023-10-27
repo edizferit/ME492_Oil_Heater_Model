@@ -4,7 +4,7 @@ An oil heater cycle is modeled by MATLAB/Simulink as graduation project in the B
 
 The oil cycle is a part of the Organic Rankine Cycle located at the [BURET Lab](http://buret.boun.edu.tr/facilities/organic-rankine-cycle/) of Boğaziçi University. The oil is used to heat up the working fluid R134A. The oil undergoes four different components, including a pump, heater, evaporator, and tank. The system, including the four components, is modeled in MATLAB/Simulink by using governing differential equations and experimental data.
 
-* **src** folder contains MATLAB script and Simulink model.
+* **src** folder contains MATLAB script and Simulink model (Examples: [heater](figures/heater-model.png), [evaporator](figures/evaporator-model.png)).
 
 * **report** folder contains LaTeX code, which creates the [report](report/output/report.pdf) as a pdf file.
 
