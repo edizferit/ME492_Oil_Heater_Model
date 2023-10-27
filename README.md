@@ -6,7 +6,7 @@ The oil cycle is a part of the Organic Rankine Cycle located at the [BURET Lab](
 
 * **src** folder contains MATLAB script and Simulink model.
 
-* **report** folder contains LaTeX code, which creates the report as a pdf file.
+* **report** folder contains LaTeX code, which creates the [report](report/output/report.pdf) as a pdf file.
 
 ---
 
